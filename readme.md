@@ -1,1 +1,1 @@
-#Veri Modelleme PostgreSql
+Veri Modelleme PostgreSql
