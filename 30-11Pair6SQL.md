@@ -23,7 +23,7 @@ FROM WCUSTOMERS;
 ```
 ********************************************************
 
-```
+```sql
 CREATE FUNCTION WDATEDIFF(datepart TEXT, enddate DATE, startdate DATE ,OUT SUM int ) AS $$
 DECLARE
    BEGIN
@@ -37,7 +37,7 @@ SELECT WDATEDIFF('DAY','2022-12-25','2022-12-16');
 ```
 ********************************************************
 
-```
+```sql
 CREATE FUNCTION WDATEDIFF14(datepart TEXT, enddate DATE, startdate DATE ) 
 RETURNS INT AS $$
 DECLARE
