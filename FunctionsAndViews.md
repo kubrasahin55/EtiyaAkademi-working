@@ -27,7 +27,7 @@ FROM WCUSTOMERS;
 CREATE FUNCTION WDATEDIFF(datepart TEXT, enddate DATE, startdate DATE ,OUT SUM int ) AS $$
 DECLARE
    BEGIN
-        sum := (date_part(datepart,enddate) = date_part(datepart,startdate));
+        sum = (date_part(datepart,enddate) - date_part(datepart,startdate));
 END;
 $$ LANGUAGE PLPGSQL;
 
@@ -73,6 +73,6 @@ BEGIN
 END;
 $$ LANGUAGE PLPGSQL;
 
-SELECT * FROM SUM_N_PRODUCT1(2,4);
+SELECT * FROM SUM_N_PRODUCT2(2,4);
 ```
 
